@@ -1,5 +1,5 @@
 body {
-    font-size: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     background: linear-gradient(45deg, rgb(44, 41, 38), rgb(46, 43, 41));
 }
