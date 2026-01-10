@@ -24,6 +24,22 @@ a {
     text-transform: uppercase;
 }
 
+/*Hamburger button*/
+.menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+
 #main-header ul {
     list-style: none;
     display: flex;
@@ -47,6 +63,37 @@ a {
 #main-header nav a:hover {
     color: rgb(228, 163, 44);
 }
+
+#side-drawer {
+    /*we want to hide ALL remaining content of the website, ONLY have the navigation anchor tags here when hamburger menu is clicked*/
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 26, 27);
+    /*take the document out of the flow*/
+    position: fixed;
+    /*position relative to the viewport, visible area of the browser*/
+    top: 0;
+    left: 0;
+}
+
+#side-drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#side-drawer li {
+    margin: 1rem 0;
+}
+
+#side-drawer a {
+    color: rgb(253, 239, 213);
+    font-size: 2rem;
+}
+
 
 main h1 {
     text-align: center;
